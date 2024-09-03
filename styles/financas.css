@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100vh;
+}
+
+
+header {
+    width: 100dvw;
+    height: 100px;
+    background: orange;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+header nav {
+    width: 100dvw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 2%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#headerResponsivo {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    position: absolute;
+    background: none;
+}
+
+#headerResponsivo div {
+    width: 40px;
+    height: 5px;
+    background-color: white;
+}
+
+#containerNavOculta {
+    display: none;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    background: orange;
+    position: absolute;
+    top: 40px;
+    z-index: 3;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+#containerNavOculta a{
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 23px;
+    padding: 10px;
+}
+
+#containerNavOculta a:hover {
+    color: gray;
+}
+
+
+#financas .financas {
+    border-bottom:4px solid white;
+}
+
+.containerMain {
+    height: calc(100vh - 100px);
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 20px;
+}
+
+#areaProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #340000;
+    border-radius: 10px;
+    height: 400px;
+}
+
+#areaProfile #imgProfile {
+    width: 200px;
+    height: 200px;
+    background: url(../images/icon-profile.png) no-repeat center;
+    background-size: 320px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+
+#areaProfile #nameProfile {
+    color: white;
+}
+
+#areaSaldo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid orange;
+    border-radius: 10px;
+    position: relative;
+    height: 400px;
+}
+
+#areaSaldo #saldo {
+    font-size: 100px;
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+#areaSaldo #periodoSaldo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 20%;
+    height: 60px;
+    font-weight: bolder;
+    font-size: 25px;
+    border: 4px solid orange;
+    border-radius: 8px;
+}
+
+#areaSaldo #saldoTitle {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#areaEntradasSaidas {
+    border: 2px solid;
+    text-align: right;
+    margin: 0 10px 10px 10px;
+    border: 4px solid orange;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#areaEntradasSaidas h1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#iconEntradasSaidas {
+    display: flex;
+    gap: 2px;
+}
+
+#areaEntradasSaidas .entrada, #areaEntradasSaidas .saida {
+    margin: 10px;
+}
+
+#areaEntradasSaidas .entrada h2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+}
+
+
+#areaEntradasSaidas .entrada p {
+    color: green;
+}
+
+#areaEntradasSaidas .saida p {
+    color: red;
+}
+
+
+
+#areaHistorico {
+    grid-column: 1 / -1;
+}
+
+
+
+
+.tituloHistorico {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#listaHistorico li {
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.431);
+}
+
+#listaHistorico li .descricao {
+    width: calc(100% - 100px);
+}
+
+#listaHistorico li .imgProdutoHistorico {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#listaHistorico li .id {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#listaHistorico li a {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#listaHistorico li .nome {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#listaHistorico li .preço {
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+#listaHistorico li .data {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+    header {
+        background-color: orange;
+        height: 70px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #headerResponsivo {
+        display: flex;
+    }
+
+    .containerMain {
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    #areaSaldo {
+        height: 280px;
+    }
+    
+    #areaProfile {
+        height: 200px;
+    }
+
+    #areaProfile #imgProfile {
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    #areaProfile #nameProfile {
+        color: white;
+        font-size: 20px;
+    }
+
+    #areaSaldo #saldo {
+        font-size: 40px;
+        margin-left: 10px;
+        margin-top: auto;
+    }
+
+    #areaEntradasSaidas h1 {
+        font-size: 15px;
+    }
+
+    #areaSaldo #periodoSaldo {
+        height: 40px;
+        width: 50%;
+        font-size: 15px;
+    }
+
+    #areaEntradasSaidas .entrada h2 {
+        font-size: 15px;
+    }
+
+    #areaEntradasSaidas h2 {
+        font-size: 15px;
+    }
+
+    .tituloHistorico {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    #listaHistorico li {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #listaHistorico li .descricao {
+        width:100%;
+    }
+    
+    #listaHistorico li .imgProdutoHistorico {
+        height: 80px;
+        width: 80px;
+    }
+    
+    #listaHistorico li .id {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    #listaHistorico li a {
+        font-size: 14px;
+    }
+    
+    #listaHistorico li .nome {
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+    }
+    
+    #listaHistorico li .preço {
+        font-size: 18px;
+    }
+    
+    #listaHistorico li .data {
+        font-size: 15px;
+    }
+}
+
+/* Celulares  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+        background-color: orange;
+        height: 80px;
+    }
+
+    header nav a {
+        font-size: 18px;
+    }
+
+    .containerMain {
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr 1fr;
+    }
+
+    #areaSaldo {
+        height: 300px;
+    }
+    
+    #areaProfile {
+        height: 200px;
+    }
+
+    #areaProfile #imgProfile {
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    #areaProfile #nameProfile {
+        color: white;
+        font-size: 20px;
+    }
+
+    #areaSaldo #saldo {
+        font-size: 50px;
+        margin-left: 10px;
+        margin-top: auto;
+    }
+
+    #areaEntradasSaidas h1 {
+        font-size: 20px;
+    }
+
+    #areaSaldo #periodoSaldo {
+        height: 40px;
+        width: 40%;
+        font-size: 18px;
+    }
+
+    #areaEntradasSaidas .entrada h2 {
+        font-size: 18px;
+    }
+
+    #areaEntradasSaidas h2 {
+        font-size: 18px;
+    }
+
+}
+
+/* celulares e alguns tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header {
+        background-color: orange;
+        height: 80px;
+    }
+
+    header nav a {
+        font-size: 20px;
+    }
+
+    #areaSaldo {
+        height: 350px;
+    }
+    
+    #areaProfile {
+        height: 350px;
+    }
+
+    #areaSaldo #saldo {
+        font-size: 70px;
+        margin-left: 10px;
+        margin-top: auto;
+    }
+
+    #areaEntradasSaidas h1 {
+        font-size: 25px;
+    }
+
+    #areaSaldo #periodoSaldo {
+        height: 40px;
+        width: 40%;
+        font-size: 20px;
+    }
+
+    #areaEntradasSaidas .entrada h2 {
+        font-size: 20px;
+    }
+
+    #areaEntradasSaidas h2 {
+        font-size: 20px;
+    }
+}
+
+/* tablets */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header {
+        background-color: orange;
+    }
+    
+    header nav a {
+        font-size: 25px;
+    }
+
+    #areaSaldo {
+        height: 350px;
+    }
+    
+    #areaProfile {
+        height: 350px;
+    }
+
+    #areaSaldo #saldo {
+        font-size: 80px;
+        margin-left: 10px;
+        margin-top: auto;
+    }
+
+    #areaEntradasSaidas h1 {
+        font-size: 30px;
+    }
+
+    #areaSaldo #periodoSaldo {
+        height: 40px;
+        width: 30%;
+        font-size: 20px;
+    }
+
+    #areaEntradasSaidas .entrada h2 {
+        font-size: 20px;
+    }
+
+    #areaEntradasSaidas h2 {
+        font-size: 20px;
+    }
+}
+
+/* Notebooks */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    header {
+        background-color: orange;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1400px) {
+    header {
+        background-color: orange;
+    }
+}
+
+

@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: Open Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100dvw;
+    height: 100px;
+    background: orange;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+header nav {
+    width: 100dvw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 2%;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+main{
+    height: 100%;
+}
+
+#headerResponsivo {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    background: none;
+}
+
+#headerResponsivo div {
+    width: 40px;
+    height: 5px;
+    background-color: white;
+}
+
+#containerNavOculta {
+    display: none;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    position: absolute;
+    top: 40px;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+#containerNavOculta a{
+    background-color: orange;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    font-size: 23px;
+    padding: 10px;
+}
+
+#containerNavOculta a:hover {
+    color: gray;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+#areaProfile {
+    background: #340000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+#labelNameProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#labelNameProfile ion-icon {
+    font-size: 30px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#containerNameNone {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+}
+
+#nameYes, #nameNo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid white;
+    font-size: 30px;
+}
+
+#nameYes {
+    background: green;
+    color: white;
+}
+
+#nameNo {
+    background-color: red;
+    color: white;
+}
+
+#inputNameProfileNone {
+    padding: 15px;
+    border-radius: 8px;
+    background: none;
+    border: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+#inputNameProfileNone:focus {
+    outline: none;
+    color: white;
+    border: 2px solid white;
+}
+
+#inputNameProfileNone::placeholder {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.837);
+} 
+
+#labelNameProfile ion-icon:hover {
+    color: gray;
+}
+
+#nameYes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#editColorProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.782);
+    position: absolute;
+    top: 0; margin-top: 5px;
+    right: 0; margin-right: 5px;
+    cursor: pointer;
+}
+
+#areaCores {
+    width: 50%;
+    height: 60%;
+    background: rgb(195, 194, 194);
+    position: absolute;
+    top: 0; margin-top: 5px;
+    right: 0; margin-right: 5px;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: none;
+}
+
+.cores {
+    margin-top: 60px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.imgProfile {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background: url(../images/icon-profile.png) no-repeat center;
+    background-size: 320px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#areaProfile h1 {
+    color: white;
+}
+
+#bio {
+    width: 80%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 200px;
+}
+
+#bio::placeholder {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    margin: 4%;
+    color: #b9b9b9;
+}
+
+#bio:focus {
+    outline: none;
+    color: white;
+}
+
+
+/* PRODUTOS */
+
+#containerProdutos {
+    width: 70vw;
+    display: grid;
+    align-content: start;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#containerProdutos .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.produto .imgProduto {
+    width: 200px;
+    height: 200px;
+    background: rgb(170, 169, 169) url("https://painacozinha.com/wp-content/uploads/85.Pizza-de-Calabresa-com-Catupiry.webp") no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.iconCar {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCar ion-icon {
+    font-size: 30px;
+}
+
+.iconCar ion-icon[name=add-outline] {
+    font-size: 15px;
+}
+
+.addCar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#visaoGeral .visaoGeral {
+    border-bottom: 4px solid white;
+}
+
+.categorias {
+    grid-column: 1 / -1;
+}
+
+.categorias select {
+    margin: 20px 0 0 20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 4px solid orange;
+}
+
+.categorias select:focus {
+    outline: none;
+}
+
+
+/* MEDIAS QUERYS */
+
+@media (min-width: 220px) and (max-width: 575.98px) {
+    header {
+        background-color: orange;
+        height: 70px;
+    }
+
+    header nav  {
+        display: none;
+    }
+
+    #headerResponsivo {
+        display: flex;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #containerProdutos {
+        width: 100%;
+    }
+
+    .imgProfile {
+        height: 150px;
+        width: 150px;
+    }
+
+    .produto .imgProduto {
+        height: 120px;
+        width: 120px;
+    }
+
+    .containerMain {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .Preço {
+        font-size: 20px;
+    }
+
+
+    #areaProfile {
+        width: 100dvw;
+        padding-bottom: 20px;
+
+    }
+
+    #containerProdutos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #bio {
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        height: 150px;
+    }
+
+}
+
+/* Celulares  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+        background-color: orange;
+        height: 80px;
+    }
+
+    header nav a {
+        font-size: 18px;
+    }
+
+    .imgProfile {
+        height: 150px;
+        width: 150px;
+    }
+
+    .produto .imgProduto {
+        height: 120px;
+        width: 120px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #containerProdutos {
+        width: 100%;
+    }
+
+    .Preço {
+        font-size: 20px;
+    }
+
+    .containerMain {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #areaProfile {
+        width: 100dvw;
+        padding-bottom: 20px;
+
+    }
+
+    #containerProdutos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #bio {
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* celulares e alguns tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    header {
+        background-color: orange;
+        height: 80px;
+    }
+
+    header nav a {
+        font-size: 20px;
+    }
+
+    .imgProfile {
+        height: 150px;
+        width: 150px;
+    }
+
+    .produto .imgProduto {
+        height: 120px;
+        width: 120px;
+    }
+
+    .iconCar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Preço {
+        font-size: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #containerProdutos {
+        width: 100%;
+    }
+
+    #areaProfile {
+        width: 100dvw;
+        padding-bottom: 20px;
+
+    }
+
+    #containerProdutos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #bio {
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* tablets */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    header {
+        background-color: orange;
+    }
+
+    header nav a {
+        font-size: 25px;
+    }
+
+    .imgProfile {
+        height: 150px;
+        width: 150px;
+    }
+
+    .produto .imgProduto {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+/* Notebooks */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    header {
+        background-color: orange;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1400px) {
+    header {
+        background-color: orange;
+    }
+}
+

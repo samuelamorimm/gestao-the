@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Geral</title>
+    <link rel="stylesheet" href="../styles/visaogeral.css">
+    <!-- ionic -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body id="visaoGeral">
+    <header>
+        <header id="headerResponsivo" onclick="navOculta(1)">
+            <div></div>
+            <div>
+            </div>
+            <div></div>
+        </header>
+        <div id="containerNavOculta">
+            <a href="visaogeral.html" class="visaoGeral"><ion-icon name="eye-outline"></ion-icon>Visão Geral</a>
+            <a href="produtos.html"><ion-icon name="fast-food-outline"></ion-icon>Produtos</a>
+            <a href="financas.html"><ion-icon name="newspaper-outline"></ion-icon>Finanças</a>
+            <a href="configuracoes.html"><ion-icon name="construct-outline"></ion-icon>Configurações</a>
+        </div>
+        <nav>
+            <a href="visaogeral.html" class="visaoGeral"><ion-icon name="eye-outline"></ion-icon>Visão Geral</a>
+            <a href="produtos.html"><ion-icon name="fast-food-outline"></ion-icon>Produtos</a>
+            <a href="financas.html"><ion-icon name="newspaper-outline"></ion-icon>Finanças</a>
+            <a href="configuracoes.html"><ion-icon name="construct-outline"></ion-icon>Configurações</a>
+        </nav>
+    </header>
+
+    <main>
+        <aside id="areaProfile">
+            <div id="areaCores">
+                <div class="cores" onclick="mudarCorProfile('#340000', 'none')" style="background: #340000;"></div>
+                <div class="cores" onclick="mudarCorProfile('#00277c', 'none')" style="background: #00277c;"></div>
+                <div class="cores" onclick="mudarCorProfile('#165f00', 'none')" style="background: #165f00;"></div>
+            </div>
+            <div id="editColorProfile">
+                <ion-icon name="color-palette-outline"></ion-icon>
+            </div>
+            <div id="imgProfile" class="imgProfile"></div>
+            <label for="nameProfile" id="labelNameProfile">
+                <div id="containerNameNone">
+                    <input type="text" id="inputNameProfileNone" placeholder="Insira um nome">
+                    <button onclick="confirmar(1)" id="nameYes"><ion-icon
+                            name="checkmark-circle-outline"></ion-icon></button>
+                    <button onclick="confirmar(2)" id="nameNo"><ion-icon
+                            name="close-circle-outline"></ion-icon></button>
+                </div>
+            </label>
+            <h1 id="nameProfile">
+                Nome Loja
+            </h1>
+            <ion-icon id="iconEditName" name="create-outline"></ion-icon>
+            <textarea type="text" placeholder="Adicione uma bio..." id="bio"></textarea>
+        </aside>
+        <section id="containerProdutos">
+            <div class="categorias">
+                <select id="">
+                    <option value="">Selecione uma categoria</option>
+                    <option value="">Lanches</option>
+                    <option value="">Pizzas</option>
+                    <option value="">Bebidas</option>
+                    <option value="">Salgados</option>
+                </select>
+            </div>
+            <div class="produto">
+                <div class="imgProduto"></div>
+                <h1 class="tituloProduto">Título</h1>
+                <p>Ver detalhes</p>
+                <div class="addCar">
+                    <div class="iconCar">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <h1 class="Preço">R$00,00</h1>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="imgProduto"></div>
+                <h1 class="tituloProduto">Título</h1>
+                <p>Ver detalhes</p>
+                <div class="addCar">
+                    <div class="iconCar">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <h1 class="Preço">R$00,00</h1>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="imgProduto"></div>
+                <h1 class="tituloProduto">Título</h1>
+                <p>Ver detalhes</p>
+                <div class="addCar">
+                    <div class="iconCar">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <h1 class="Preço">R$00,00</h1>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../addProduto.js"></script>
+    <script src="../navResponsiva.js"></script>
+</body>
+
+</html>

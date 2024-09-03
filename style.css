@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: Open Sans, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    height: 100px;
+}
+
+nav {
+    width: 100dvw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #ffae00;
+    background: url(images/logohome.svg) no-repeat center;
+    background-size: cover;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.auth-buttons {
+    display: flex;
+    float: right;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    border-radius: 4px;
+    border: 2.5px solid orange;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #ffae00;
+    color: #ffae00;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffae00;
+    color: #000000;
+}
+
+.hero {
+    background: url(images/banner1.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    height: calc(100vh - 100px);
+}
+
+.hero h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    width: 200px;
+    align-self: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.conte-com-a-gente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(images/banner2.png) no-repeat center;
+    background-size: cover;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    height: 700px;
+}
+
+.conte-com-a-gente h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.conte-com-a-gente .p {
+    font-size: 1em;
+    width: 60%;
+    align-self: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    position: relative;
+    width: 180px;
+    height: 250px;
+    background-color: #ffae00;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: calc(30px * var(--order));
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.feature-item div {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    gap: 5px;
+    position: absolute;
+    bottom: 5px;
+    text-shadow: 0px 0px 18px rgba(0, 0, 0, 0.5);
+}
+
+.feature-item div p{
+    text-align: left;
+    margin: 0 10px;
+}
+
+.feature-item div h1 {
+    margin: 0 10px;
+    width: 90%;
+    text-align: left;
+}
+
+#feature-item1 {
+    background: linear-gradient(#00000041, #000000), url(images/printVisaoGeral.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#feature-item2 {
+    background: linear-gradient(#00000041, #000000), url(images/printProdutos.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#feature-item3 {
+    background: linear-gradient(#00000041, #000000), url(images/printFinancas.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#feature-item4 {
+    background: linear-gradient(#00000041, #000000), url(images/printConfig.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.quem-somos {
+    background: url(images/banner3.png) no-repeat center;
+    background-size: cover;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+    position: relative;
+    color: white;
+    height: 600px;
+}
+
+.quem-somos .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.quem-somos .ball {
+    width: 500px;
+    height: 400px;
+    background-color: rgb(255, 166, 0);
+    filter: blur(35px);
+    border-radius: 50%;
+    position: absolute;
+    left: -150px;
+}
+
+.quem-somos img{
+    width: 500px;
+    position: absolute;
+    left: 20px;
+}
+
+.quem-somos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.devices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.devices img {
+    width: 150px;
+    height: auto;
+}
+
+footer {
+    background: #333333 ;
+    background: url(images/banner4.png) no-repeat center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feedback-form h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedback-form input, 
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ffae00;
+    border-radius: 5px;
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.feedback-form input:focus, .feedback-form textarea:focus {
+    outline: none;
+    border: 2px solid #f8e8c9;
+}
+
+.feedback-form input::placeholder, .feedback-form textarea::placeholder {
+    color: #ccc;
+}
+
+.feedback-form textarea {
+    height: 150px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    height: auto;
+}
+
+footer p {
+    margin-top: 20px;
+}
+

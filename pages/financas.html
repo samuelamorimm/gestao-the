@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/financas.css">
+    <!-- ionic -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body id="financas">
+    <header>
+        <header id="headerResponsivo" onclick="navOculta(1)">
+            <div></div>
+            <div></div>
+            <div></div>
+        </header>
+        <div id="containerNavOculta">
+            <a href="visaogeral.html" class="visaoGeral"><ion-icon name="eye-outline"></ion-icon>Visão Geral</a>
+            <a href="produtos.html"><ion-icon name="fast-food-outline"></ion-icon>Produtos</a>
+            <a href="financas.html" class="financas"><ion-icon name="newspaper-outline"></ion-icon>Finanças</a>
+            <a href="configuracoes.html"><ion-icon name="construct-outline"></ion-icon>Configurações</a>
+        </div>
+        <nav>
+            <a href="visaogeral.html" class="visaoGeral"><ion-icon name="eye-outline"></ion-icon>Visão Geral</a>
+            <a href="produtos.html" class="produtos"><ion-icon name="fast-food-outline"></ion-icon>Produtos</a>
+            <a href="financas.html" class="financas"><ion-icon name="newspaper-outline"></ion-icon>Finanças</a>
+            <a href="configuracoes.html"><ion-icon name="construct-outline"></ion-icon>Configurações</a>
+        </nav>
+    </header>
+
+    <main class="containerMain">
+        <section id="areaProfile">
+            <div id="imgProfile"></div>
+            <h1 id="nameProfile">Nome Loja</h1>
+        </section>
+
+        <section id="areaSaldo">
+                <select name="" id="periodoSaldo">
+                    <option value="">Hoje</option>
+                    <option value="">Ultima Semana</option>
+                    <option value="">Ultimo mês</option>
+                    <option value="">Todo o período</option>
+                </select>
+
+                <h2 id="saldoTitle">Saldo</h2>
+
+                <h1 id="saldo">R$ 00,00</h1>
+
+                <aside id="areaEntradasSaidas">
+                    <h1>
+                        <div id="iconEntradasSaidas">
+                            <ion-icon name="arrow-up-outline" style="color: green;"></ion-icon>
+                            <ion-icon name="arrow-down-outline" style="color: red;"></ion-icon>
+                        </div>
+                        Entradas e Saídas recentes
+                    </h1>
+
+                    <div class="entrada">
+                        <h2>
+                            <ion-icon name="arrow-up-outline" style="color: green;"></ion-icon>
+                            R$ 00,00
+                        </h2>
+                        <p>entrada</p>
+                    </div>
+
+                    <div class="saida">
+                        <h2>
+                            <ion-icon name="arrow-down-outline" style="color: red;"></ion-icon>
+                            R$ 00,00
+                        </h2>
+                        <p>saída</p>
+                    </div>
+                </aside>
+        </section>
+
+        <section id="areaHistorico">
+            <h1 class="tituloHistorico">Histórico de pedidos</h1>
+
+            <ul id="listaHistorico">
+                <li>
+                    <div class="imgProdutoHistorico">
+                    </div>
+                    <div class="descricao">
+                        <h1 class="id">ID: 192834798</h1>
+                        <h1 class="nome">Nome do produto</h1>
+                        <a href="">ver detalhes</a>
+                        <h1 class="preço">
+                            <ion-icon name="arrow-up-outline" style="color: green;"></ion-icon>
+                            R$ 00,00
+                        </h1>
+                        <h2 class="data">00/00/2024</h2>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="imgProdutoHistorico">
+                    </div>
+                    <div class="descricao">
+                        <h1 class="id">ID: 192834798</h1>
+                        <h1 class="nome">Nome do produto</h1>
+                        <a href="">ver detalhes</a>
+                        <h1 class="preço">
+                            <ion-icon name="arrow-up-outline" style="color: green;"></ion-icon>
+                            R$ 00,00
+                        </h1>
+                        <h2 class="data">00/00/2024</h2>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="imgProdutoHistorico">
+                    </div>
+                    <div class="descricao">
+                        <h1 class="id">ID: 192834798</h1>
+                        <h1 class="nome">Nome do produto</h1>
+                        <a href="">ver detalhes</a>
+                        <h1 class="preço">
+                            <ion-icon name="arrow-up-outline" style="color: green;"></ion-icon>
+                            R$ 00,00
+                        </h1>
+                        <h2 class="data">00/00/2024</h2>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="imgProdutoHistorico">
+                    </div>
+                    <div class="descricao">
+                        <h1 class="id">ID: 192834798</h1>
+                        <h1 class="nome">Nome do produto</h1>
+                        <a href="">ver detalhes</a>
+                        <h1 class="preço">
+                            <ion-icon name="arrow-up-outline" style="color: green;"></ion-icon>
+                            R$ 00,00
+                        </h1>
+                        <h2 class="data">00/00/2024</h2>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="imgProdutoHistorico">
+                    </div>
+                    <div class="descricao">
+                        <h1 class="id">ID: 192834798</h1>
+                        <h1 class="nome">Nome do produto</h1>
+                        <a href="">ver detalhes</a>
+                        <h1 class="preço">
+                            <ion-icon name="arrow-up-outline" style="color: green;"></ion-icon>
+                            R$ 00,00
+                        </h1>
+                        <h2 class="data">00/00/2024</h2>
+                    </div>
+                </li>
+
+                
+            </ul>
+        </section>
+    </main>
+
+    <script src="../navResponsiva.js"></script>
+</body>
+</html>
