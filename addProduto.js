@@ -1,4 +1,4 @@
-var nomeProduto = document.getElementById("nomeNovoProduto")
+var nomeProduto = document.getElementById("nomeNovoProduto").value
 var valorProduto = document.getElementById("valorNovoProduto")
 var descProduto = document.getElementById("descNovoProduto")
 
@@ -15,9 +15,12 @@ function openCloseAddProduto(valor){
 }
 
 function addProduto() {
+    valorProduto = eval(valorProduto.value)
+    valorProduto = valorProduto.toFixed(2)
+
     const newProduto = produtoBase.cloneNode(true)
-    newProduto.querySelector(".tituloProduto").innerHTML = nomeProduto.value
-    newProduto.querySelector(".Preço").innerHTML = valorProduto.value
+    newProduto.querySelector(".tituloProduto").innerHTML = nomeProduto
+    newProduto.querySelector(".Preço").innerHTML = `R$ ${valorProduto.replace(".", ",")}`
 
     document.getElementById("containerProdutos").append(newProduto)
 

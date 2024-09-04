@@ -236,12 +236,12 @@ nav ul li a {
 
 .quem-somos .ball {
     width: 500px;
-    height: 400px;
+    height: 500px;
     background-color: rgb(255, 166, 0);
     filter: blur(35px);
     border-radius: 50%;
     position: absolute;
-    left: -150px;
+    left: -260px;
 }
 
 .quem-somos img{
@@ -268,7 +268,7 @@ nav ul li a {
 }
 
 footer {
-    background: #333333 ;
+    background: #333333;
     background: url(images/banner4.png) no-repeat center;
     background-size: cover;
     color: #ffffff;

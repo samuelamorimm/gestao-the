@@ -10,7 +10,7 @@
 
 body {
     height: calc(100vh - 100px);
-    background-color: #340000;
+    background-color: #4E2A2A;
     
 }
 
@@ -129,6 +129,7 @@ main {
     flex-direction: column;
     gap: 20px;
     width: 100vw;
+    margin-bottom: 20px;
 }
 
 #areaItensConfig .item {
@@ -142,14 +143,20 @@ main {
     display: flex;
     cursor: pointer;
     align-items: center;
-    gap: 10px;
-    background-color: rgba(255, 255, 255, 0.397);
-    border: 3px solid orange;
+    gap: 20px;
+    background-color: #ffc400;
+    border: 3px solid white;
     width: 40%;
     border-radius: 10px;
-    color: white;
+    color: black;
     font-weight: 600;
     height: 60px;
+}
+
+#areaItensConfig h1:hover {
+    background-color: rgb(167, 115, 19);
+    color: white;
+    transition-duration: 0.3s;
 }
 
 #areaItensConfig a {
