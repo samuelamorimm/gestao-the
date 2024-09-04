@@ -259,20 +259,20 @@ main {
     background: transparent;
     border: 2px solid white;
     border-radius: 10px;
-    height: 200px;
+    color: white;
+    font-size: 0.97em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    padding: 10px;
 }
 
-#bio::placeholder {
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    margin: 4%;
-    color: #b9b9b9;
-}
-
-#bio:focus {
+#bio:hover {
     outline: none;
     color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition-duration: 0.4s;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.452));
 }
 
 

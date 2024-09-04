@@ -98,7 +98,8 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 40px;
+
+    position: relative;
 }
 
 
@@ -120,6 +121,7 @@ main {
     background-size: 320px;
     width: 200px;
     height: 200px;
+    margin-top: 40px;
     border-radius: 50%;
     border: 3px solid white;
 }
@@ -168,6 +170,33 @@ main {
 
 #areaItensConfig h1 ion-icon {
     margin-left: 10px;
+}
+
+#atualizacao {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    font-size: 0.9em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#atualizacao ion-icon{
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #ffc400;
+    border: 3px solid white;
+    color: black;
+    border-radius: 4px;
+}
+
+#atualizacao ion-icon:hover {
+    background-color: rgb(207, 166, 88);
+    color: white;
+    transition-duration: 0.3s;
 }
 
 
