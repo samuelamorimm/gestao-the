@@ -50,12 +50,19 @@ header nav a {
     align-items: center;
     position: absolute;
     background: none;
+    cursor: pointer;
 }
 
 #headerResponsivo div {
     width: 40px;
     height: 5px;
     background-color: white;
+}
+
+#headerResponsivo:hover div {
+    background-color: rgb(187, 187, 187);
+    transform: scale(0.95);
+    transition-duration: 0.3s;
 }
 
 #containerNavOculta {
@@ -226,8 +233,21 @@ main {
     }
 
     #profile #imgProfile {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
+        margin-top: 60px;
+    }
+
+    #atualizacao {
+        font-size: 0.8em;
+        top: 20px;
+        right: 0;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    #atualizacao ion-icon{
+        font-size: 25px;
     }
 
 }
@@ -255,6 +275,19 @@ main {
     #profile #imgProfile {
         width: 180px;
         height: 180px;
+        margin-top: 60px;
+    }
+
+    #atualizacao {
+        font-size: 0.8em;
+        top: 20px;
+        right: 0;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    #atualizacao ion-icon{
+        font-size: 25px;
     }
 }
 
@@ -283,6 +316,13 @@ main {
         height: 180px;
     }
 
+    #atualizacao {
+        font-size: 0.8em;
+    }
+    
+    #atualizacao ion-icon{
+        font-size: 25px;
+    }
 }
 
 /* tablets */

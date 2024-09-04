@@ -54,12 +54,19 @@ main {
     width: 100%;
     position: absolute;
     background: none;
+    cursor: pointer;
 }
 
 #headerResponsivo div {
     width: 40px;
     height: 5px;
     background-color: white;
+}
+
+#headerResponsivo:hover div {
+    background-color: rgb(187, 187, 187);
+    transform: scale(0.95);
+    transition-duration: 0.3s;
 }
 
 #containerNavOculta {

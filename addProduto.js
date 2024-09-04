@@ -25,6 +25,5 @@ function addProduto() {
     newProduto.querySelector(".tituloProduto").innerHTML = nomeProduto
     newProduto.querySelector(".Preço").innerHTML = `R$ ${valorProduto}`
     document.getElementById("containerProdutos").append(newProduto)
-
 }
 
