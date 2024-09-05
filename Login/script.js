@@ -217,7 +217,7 @@ document.getElementById("signIn").addEventListener("click", function logar() {
         msgLogin.style.color = "green"
         msgLogin.style.fontWeight = '600'
         setTimeout(() => {
-            window.location.href = "../pages/visaoGeral.html" // transportar usuario para a home do site
+            window.location.href = "../pages/index.html" // transportar usuario para a home do site
         }, 4000);
     } else if (valid == true){ // se não forem compativeis
         let msgLogin = document.querySelector("#msgLogin")
